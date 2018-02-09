@@ -1,0 +1,505 @@
+@import "variables";
+@import "support";
+@import "components";
+
+main {
+  // max-width: 1200px;
+  // margin: 0 auto;
+}
+
+.valign {
+  // text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// .signup_section {
+//     padding-left: 10px;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+
+// .signup {
+//   max-width: 450px;
+// }
+
+// .cryptotoday_section {
+//      position: absolute;
+//      right: 0;
+//      height: 100vh;
+//      width: 50%;
+//      text-align: center;
+
+//       .cryptotoday {
+//         width: 550px;
+//         // height: 550px;
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         text-align: center;
+
+//         .icon img {
+//           max-height: 35vh;
+//           margin: 0 auto;
+//         }
+//       }
+// }
+
+.cryptotoday {
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.links {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10000;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+header {
+  // background: #434187;
+  height: 100px;
+  
+  .wrapper-large {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .inner-header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .back-website span{
+    font-size: 14px;
+    font-family: 'Poppins', Helvetica, Arial;
+    
+    a {
+      color: $white;
+      font-weight: 300;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: #3c3c3c;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      color: #777;
+    }
+  }
+
+  .logo {
+    h6 {
+      padding: 0;
+    }
+
+    a {      
+      // background-image: url("/images/cryptominded.png");
+      // text-indent: -9999em;
+      color: $white;
+      display: block;
+      width: 185px;
+      height: 45px;
+      background-size: 185px 45px;
+    }
+  }
+}
+
+.hero {
+  background: url("/images/shanghai_purple.png");
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  position: relative;
+  z-index: 1;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   background-image: url("/images/shanghai.png");
+  //   background-size: cover;
+  //   background-position: center;
+  //   opacity: .3;
+  // }
+
+  &:before, &:after {
+    content: "";
+    // background: background: #434187;
+    border-bottom: 15px solid #f3f3f3;
+    height: 0px;
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  &:before {
+    border-right: 15px solid rgba(0,0,0,0);
+    left: -15px;
+  }
+
+  &:after {
+    right: -15px;
+    border-left: 15px solid rgba(0,0,0,0);
+    border-right: none;
+  }
+
+  .wrapper {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+
+  &__intro {
+    // max-width: 65%;
+    margin: 0 auto;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 45%;
+    }
+  }
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   bottom: -10px;
+  //   left: 50%;
+  //   transform: translateX(-50%) rotate(45deg);
+  //   background-color: #434187;
+  //   width: 20px;
+  //   height: 20px;
+  // }
+
+  &__intro h1 {
+    font-size: 42px;
+    line-height: 50px;
+    font-family: 'Poppins', Helvetica, Arial;
+    text-shadow: 1px 3px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 599px) {
+  .hero__intro {
+    max-width: none;
+  }
+}
+
+.signup {
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    padding: 0;
+    // margin-bottom: 1.75em;
+    // text-align: center;
+    font-weight: 500;
+  }
+
+  input:not([type='submit']),
+  textarea {
+    border: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: block;
+    // margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    // width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+  }
+
+  input[type='submit'] {
+    display: inline-block;
+    // margin: 2rem auto 0;
+    height: 3.3em;
+    line-height: 3.3rem;
+    font-size: 14px;
+    // margin: 0;
+    margin-left: 10px;
+    background-color: #7dc855;
+
+    &.loading {
+      background-image: url("/images/loading.gif");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .email {
+    float: left;
+    width: 60%;
+  }
+
+  .error {
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: red;
+    margin-top: 2rem;
+
+    &.show {
+      display: inline-block;
+    }
+  }
+
+  .disclaimer {
+    color: #999;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 2rem 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .signup .box {
+    margin-bottom: 4rem;
+  }
+}
+
+.reasons {
+  h3 {
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    padding: 0;
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}
+
+.testimonials {
+  background-color: #fff;
+  padding-bottom: 4rem;
+  position: relative;
+
+  .wrapper-large {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: #f3f3f3;
+    width: 20px;
+    height: 20px;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  li {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  img {
+    margin-right: 4rem;
+    width: 156px;
+    height: 156px;
+    border-radius: 78px;
+  }
+
+  blockquote {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+  }
+
+  cite {
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #999;
+  }
+
+  li:nth-child(even) {
+    text-align: right;
+
+    img {
+      order: 2;
+      margin-right: 0;
+      margin-left: 4rem;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .testimonials {
+    ul {
+      width: 100%;
+    }
+    
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+    }
+
+    li:nth-child(even) {
+      text-align: left;
+
+      img {
+        order: inherit;
+        margin-right: 4rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #fafafa;  
+  font-size: 1.2rem;
+
+  .wrapper-large {
+    display: flex;
+  }
+
+  p,
+  a:link,
+  a:visited {
+    font-weight: 300;
+    color: #999; 
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .about {
+    width: 33.3333%;
+  }
+
+  nav {
+    width: 20%;
+
+    &:first-of-type {
+      margin-left: auto;
+    }
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+
+  .about {
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.imprint {
+  background-color: #e6e6e6;
+  color: #777;
+
+  .wrapper-large {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  small,
+  span {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  span {
+    margin-left: auto;
+  }
+
+  a:link,
+  a:visited {
+    font-weight: 300;
+    color: #777;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .imprint {
+    .wrapper-large {
+      display: block;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      margin-top: 2rem;
+    }
+  }
+}

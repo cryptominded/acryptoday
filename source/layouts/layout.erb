@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <meta http-equiv="Content-Language" content="{{ LANG }}"> 
+    <meta name="language" content="{{ LANG }}" />
+    <meta name="application-name" content="Cryptominded Community">
+    <meta name="description" content="Join the Cryptominded community with over 2000+ members and chat, discuss and learn more about cryptocurrencies">
+    <meta name="keywords" content="cryptocurrency, events, bitcoin, community" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Resolve DNS asap (can be useful for future pages) -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
+    <!-- Better: DNS + TCP handshake + optional TLS negotiation -->
+    <!-- Use for current page -->
+    <link rel="preconnect" href="//fonts.googleapis.com">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- Enable Chrome Frame -->
+    <meta http-equiv="Default-Style" content="dark">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes, minimal-ui">
+        
+    <!-- Don't want the content to be translated on the fly by the browser ? -->
+    <meta name="google" value="notranslate">
+    <meta name="google-site-verification" content="{{ GOOGLE_WEBMASTER_TOOLS_KEY }}">
+
+    <!-- fav icon -->
+    <!-- <link rel="fluid-icon" href="https://.../fluidicon.png" title="..."> ? -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="image_src" href="{{ PAGE_IMAGE_URL }}">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
+    <!-- TODO DYNAMIC ACCORDING TO THE TYPE -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" /> <!-- product... -->
+    <meta property="og:title" content="Cryptominded Community" />
+    <meta property="og:description" content="Join the Cryptominded community with over 2000+ members and chat, discuss and learn more about cryptocurrencies" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://community.cryptominded.com" />
+    <meta property="og:site_name" content="Cryptominded" /> 
+
+    <meta property="article:publisher" content="{{ FACEBOOK_PUBLISHER }}" />
+    <meta property="article:author" content="{{ FACEBOOK_AUTHOR }}" />
+    <meta property="article:section" content="Technology" />
+    <meta property="article:published_time" content="2015-01-06T23:07:41+00:00" />
+    <meta property="article:modified_time" content="2015-05-12T22:24:50+00:00" />
+    <meta property="og:updated_time" content="2015-05-12T22:24:50+00:00" />
+    <meta property="fb:admins" content="???" />
+    <meta property="fb:app_id" content="123456789456489" />
+
+    <!-- TODO DYNAMIC ACCORDING TO THE CARD TYPE -->
+    <meta name="twitter:card" content="summary"/> <!-- photo -->
+    <meta name="twitter:title" content="{{ PAGE_NAME }}"/>
+    <meta name="twitter:description" content="{{ PAGE_DESCRIPTION }}"/>
+    <meta name="twitter:site" content="{{ TWITTER_WEBSITE_ACCOUNT }}"/>
+    <meta name="twitter:image" content="{{ PAGE_IMAGE_URL }}" />
+    <meta name="twitter:creator" content="{{ TWITTER_CREATOR_ACCOUNT }}"/>
+    <meta name="twitter:domain" content="mon.site.com"/>
+
+    <!-- Bing -->
+    <meta name="geo.placename" content="United States" />
+    <meta name="geo.position" content="x;x" />
+    <meta name="geo.region" content="usa" />
+    <meta name="ICBM" content="x,x" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <%= stylesheet_link_tag "main" %>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:300,400,500,600,700" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <%= yield %>    
+
+    <%= partial 'partials/footer-scripts' %>
+
+  </body>
+</html>
