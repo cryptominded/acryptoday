@@ -25,8 +25,9 @@ body{
   line-height: $line-height;
   min-height: 100%;
   position: relative;
+  // background: $bgcolor;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#434187+0,393772+100 */
-  background-image: linear-gradient(297deg, rgb(0, 0, 0) -13%, #1C1A4E 100%);
+  // background-color: linear-gradient(297deg, rgb(0, 0, 0) -13%, #62629A 100%);
   overflow: hidden;
 }
 

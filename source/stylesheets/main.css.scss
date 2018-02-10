@@ -2,6 +2,16 @@
 @import "support";
 @import "components";
 
+body {
+  background-image: url("/images/bg_header.png"), linear-gradient(to top, #62629A, #414186);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // background: #62629A;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to top, #62629A, #414186);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to top, #62629A, #414186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 main {
   // max-width: 1200px;
   // margin: 0 auto;
@@ -66,7 +76,7 @@ main {
 }
 
 header {
-  // background: #434187;
+  // background: $white;
   height: 100px;
   
   .wrapper-large {
@@ -109,8 +119,8 @@ header {
     }
 
     a {      
-      // background-image: url("/images/cryptominded.png");
-      // text-indent: -9999em;
+      background-image: url("/images/cryptominded.png");
+      text-indent: -9999em;
       color: $white;
       display: block;
       width: 185px;
