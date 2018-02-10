@@ -6,34 +6,44 @@ title: Join the Cryptominded Community with over 2000 members - Cryptominded.com
 
   <%= partial 'partials/navbar' %>
 
-  <div class="wrapper-large grid valign">
+  <div class="wrapper-large grid valign animated fadeIn">
 
-  <div class="signup_section">
-    <div class="signup">
-      <h1>Get an email about a new cryptocurrency every day</h1>
-      <p>Get the facts, value, news, team &amp; price evolvements of a new cryptocurrency through a daily email.</p>
-      <form id="signup">
-        <input class="email" type="email" name="email" placeholder="Your e-mail address" />
-        <input class="submit" type="submit" value="Subscribe" />
-        <span class="error"></span>
-        <!-- <p class="disclaimer">🔒&ensp;By submitting this form you agree to receive occasional Cryptominded updates by email</p> -->
-      </form>    
-    </div>
-  </div>
-
-  <div class="cryptotoday_section">
-    <div class="cryptotoday">
-      <h3 class="fw-semibold">Crypto of the day</h3>
-      <div class="icon">
-        <img src="https://cryptominded-muc3mconxtxewee6orxv.netdna-ssl.com/coin_icons/ethereum.png">
-        <p>Ethereum</p>
+    <div class="signup_section">
+      <div class="signup">
+        <h1>Get an email about a new cryptocurrency every day</h1>
+        <p>Get the facts, value, news, team &amp; price evolvements of a new cryptocurrency through a daily email.</p>
+        <form id="signup" class="animated pulse">
+          <input class="email" type="email" name="email" placeholder="Your e-mail address" />
+          <input class="submit" type="submit" value="Subscribe" />
+          <span class="error"></span>
+          <!-- <p class="disclaimer">🔒&ensp;By submitting this form you agree to receive occasional Cryptominded updates by email</p> -->
+        </form>    
       </div>
     </div>
-  </div>
+
+    <div class="cryptotoday_section">
+      <div class="cryptotoday">
+        <a href="https://cryptominded.com/coin/bitcoin">
+          <div class="icon">
+            <img src="https://cryptominded-muc3mconxtxewee6orxv.netdna-ssl.com/coin_icons/bitcoin.png">
+            <p>Bitcoin - <span id="price">$748,30</span></p>
+          </div>
+        </a>
+        <h3 class="fw-semibold">Crypto of the day</h3>
+        <!-- <span class="disclaimer"><a href="#">(Randomly chosen every day)</a></span> -->
+      </div>
+    </div>
 
   </div>
 
   <section class="links">
+    <ul class="link_list">
+      <!-- <li class="link_item"><a href="">built with &hearts; by cryptominded.com</a></li> -->
+      <li class="link_item"><a href="">Advertise</a></li>
+      <li class="link_item"><a href="https://community.cryptominded.com">Community</a></li>
+      <li class="link_item"><a href="">Disclaimer</a></li>
+    </ul>
+    <span class="disclaimer"><a href="https://cryptominded.com?ref=acryptoaday">Built with &hearts; by cryptominded.com</a></span>
   </section>
 
   <!-- <%= partial 'partials/footer' %> -->

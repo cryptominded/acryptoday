@@ -3,7 +3,7 @@
 @import "components";
 
 body {
-  background-image: url("/images/bg_header.png"), linear-gradient(to top, #62629A, #414186);
+  background-image: url("/images/bg_header.png"), linear-gradient(to top, #1C174A, #414186);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,10 +19,18 @@ main {
 
 .valign {
   // text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 50%;
+  box-sizing: border-box;
+  // background: blue;
+  color: white;
+  // text-align: center;
+  // padding: 50px 0;
+  // width: 1200px;
+  margin: 50vh auto 0;
   transform: translateY(-50%);
+
+    -webkit-animation-duration: 3s;
+    // -webkit-animation-delay: 2s;
+    // -webkit-animation-iteration-count: infinite;
 }
 
 // .signup_section {
@@ -60,9 +68,41 @@ main {
 
 .cryptotoday {
   text-align: center;
+  margin-top: 10px;
 
   img {
     margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  p { 
+    padding-bottom: 0; 
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:hover img {
+    // box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    // width: 150px;
+    // height: auto;
+  }
+
+  .disclaimer {
+  margin-top: -40px;
+  display: block;
+
+    a {
+    font-size: 12px;
+    color: #6d6b8a;
+    text-decoration: none;
+
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
 
@@ -73,11 +113,58 @@ main {
     left: 0;
     right: 0;
     text-align: center;
+
+    .disclaimer {
+    margin-top: -5px;
+    display: block;
+    font-size: 12px;
+    color: #6d6b8a;
+    text-decoration: none;
+
+      a {
+      font-size: 12px;
+      color: #6d6b8a;
+      text-decoration: none;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    .link_list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .link_item {
+      display: inline-block;
+      margin-right: 20px;
+
+      a {
+        // font-weight: 300;
+        font-size: 14px;
+        color: #C2C2D0;
+        text-decoration: none;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 }
 
 header {
   // background: $white;
-  height: 100px;
+  height: 10vh;
+  width: 100%;
+  top: 0;
+  position: absolute;
   
   .wrapper-large {
     padding-top: 0;
@@ -92,6 +179,7 @@ header {
   }
 
   .back-website span{
+    display: none;
     font-size: 14px;
     font-family: 'Poppins', Helvetica, Arial;
     
@@ -114,18 +202,26 @@ header {
   }
 
   .logo {
+    margin: 0 auto;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+
     h6 {
       padding: 0;
     }
 
     a {      
-      background-image: url("/images/cryptominded.png");
-      text-indent: -9999em;
+      // background-image: url("/images/logo.png");
+      // text-indent: -9999em;
       color: $white;
       display: block;
       width: 185px;
       height: 45px;
       background-size: 185px 45px;
+      &:hover {
+        color: $white;
+      }
     }
   }
 }
@@ -216,6 +312,12 @@ header {
   .hero__intro {
     max-width: none;
   }
+}
+
+#signup {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+// -webkit-animation-iteration-count: infinite;
 }
 
 .signup {
