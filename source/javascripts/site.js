@@ -2,8 +2,18 @@ window.onload = function() {
   var socket = io.connect('https://socket.coincap.io');
   var previousPrice = 0;
 
+  var coin = 'BTC';
+
+  $.get({
+    url: 'https://coincap.io/page/' + coin,
+    data: {},
+    success: function(result) {
+      document.getElementById("price").innerHTML = '<div id="newprice">$' + result.price_usd + "</div>";
+    }
+  });
+
   socket.on('trades', function (tradeMsg) {
-    if(tradeMsg.message.coin == "BTC"){
+    if(tradeMsg.message.coin == coin){
       var variation = (previousPrice < tradeMsg.message.msg.price) ? 'MediumSeaGreen' : 'red';
       console.log(variation, previousPrice, tradeMsg.message.msg.price);
       
