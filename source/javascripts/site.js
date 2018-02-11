@@ -1,14 +1,17 @@
 window.onload = function() {
   var socket = io.connect('https://socket.coincap.io');
   var previousPrice = 0;
+  var  reducePrecision = function(number) {
+    return parseFloat(Number(number).toFixed(3));
+  }
 
   socket.on('trades', function (tradeMsg) {
-    if(tradeMsg.message.coin == "BTC"){
+    if(tradeMsg.message.coin == "MSP"){
       var variation = (previousPrice < tradeMsg.message.msg.price) ? 'MediumSeaGreen' : 'red';
       console.log(variation, previousPrice, tradeMsg.message.msg.price);
       
       previousPrice = tradeMsg.message.msg.price;
-      document.getElementById("price").innerHTML = '<div id="newprice" style="color: ' + variation + ';">$' + tradeMsg.message.msg.price + "</div>";
+      document.getElementById("price").innerHTML = '<div id="newprice" style="color: ' + variation + ';">$' + reducePrecision(tradeMsg.message.msg.price); + "</div>";
     }
   });
 };

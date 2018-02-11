@@ -78,7 +78,7 @@ main {
 
 .cryptotoday {
   text-align: center;
-  margin-top: 10px;
+  // margin-top: 10px;
 
   img {
     margin: 0 auto;
@@ -92,6 +92,15 @@ main {
   a {
     color: $white;
     text-decoration: none;
+    &:hover .learnmore {
+      color: $white;
+    }
+  }
+
+  .learnmore {
+    margin-top: -5px;
+    color: #605A9D;
+    display: block;
   }
 
   &:hover img {
@@ -626,7 +635,10 @@ footer {
   }
 }
 
+
+
 #newprice  {
+  display: inline-block;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 2s; /* Firefox < 16 */
       -ms-animation: fadein 2s; /* Internet Explorer */
