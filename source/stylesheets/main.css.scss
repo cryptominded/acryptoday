@@ -12,6 +12,16 @@ body {
   // background: linear-gradient(to top, #62629A, #414186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+@media (max-width: 599px) {
+  main {
+    text-align: center;
+  }
+
+  .signup h1 {
+    font-size: 2rem;
+  }
+}
+
 main {
   // max-width: 1200px;
   // margin: 0 auto;
