@@ -1,3 +1,12 @@
+window.onload = function() {
+  var socket = io.connect('http://socket.coincap.io');
+  socket.on('trades', function (tradeMsg) {
+    if(tradeMsg.message.coin == "BTC"){
+      document.getElementById("price").innerHTML = '$' + tradeMsg.message.msg.price;
+    }
+  });
+};
+
 $("#signup").on('submit', function(e) {
   e.preventDefault();
 
