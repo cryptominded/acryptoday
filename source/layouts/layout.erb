@@ -104,9 +104,17 @@
   </head>
   <body>
 
-    <%= yield %>    
+    <main class="cryptoaday">
 
-    <%= partial 'partials/footer-scripts' %>
+        <%= partial 'partials/navbar' %>
 
+        <%= yield %>    
+
+        <%= partial 'partials/footer' %>
+
+        <%= partial 'partials/footer-scripts' %>
+
+    </main>
+    
   </body>
 </html>
