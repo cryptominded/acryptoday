@@ -28,57 +28,15 @@ main {
 }
 
 .valign {
-  // text-align: center;
   box-sizing: border-box;
-  // background: blue;
   color: white;
-  // text-align: center;
-  // padding: 50px 0;
-  // width: 1200px;
   margin: 50vh auto 0;
   transform: translateY(-50%);
-
-    -webkit-animation-duration: 3s;
-    // -webkit-animation-delay: 2s;
-    // -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
 }
-
-// .signup_section {
-//     padding-left: 10px;
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-// }
-
-// .signup {
-//   max-width: 450px;
-// }
-
-// .cryptotoday_section {
-//      position: absolute;
-//      right: 0;
-//      height: 100vh;
-//      width: 50%;
-//      text-align: center;
-
-//       .cryptotoday {
-//         width: 550px;
-//         // height: 550px;
-//         position: absolute;
-//         top: 50%;
-//         transform: translateY(-50%);
-//         text-align: center;
-
-//         .icon img {
-//           max-height: 35vh;
-//           margin: 0 auto;
-//         }
-//       }
-// }
 
 .cryptotoday {
   text-align: center;
-  // margin-top: 10px;
 
   img {
     margin: 0 auto;
@@ -101,27 +59,7 @@ main {
     margin-top: -5px;
     color: #605A9D;
     display: block;
-  }
-
-  &:hover img {
-    // box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    // width: 150px;
-    // height: auto;
-  }
-
-  .disclaimer {
-  margin-top: -40px;
-  display: block;
-
-    a {
-    font-size: 12px;
-    color: #6d6b8a;
-    text-decoration: none;
-
-      &:hover {
-        color: $white;
-      }
-    }
+    transition: color ease-in 0.5s;
   }
 }
 
@@ -133,7 +71,7 @@ main {
     right: 0;
     text-align: center;
 
-    .disclaimer {
+    .backlink {
     margin-top: -5px;
     display: block;
     font-size: 12px;
@@ -162,7 +100,6 @@ main {
       margin-right: 20px;
 
       a {
-        // font-weight: 300;
         font-size: 14px;
         color: #C2C2D0;
         text-decoration: none;
@@ -179,7 +116,6 @@ main {
 }
 
 header {
-  // background: $white;
   height: 10vh;
   width: 100%;
   top: 0;
@@ -197,17 +133,6 @@ header {
     align-items: center;
   }
 
-  .back-website span{
-    display: none;
-    font-size: 14px;
-    font-family: 'Poppins', Helvetica, Arial;
-    
-    a {
-      color: $white;
-      font-weight: 300;
-    }
-  }
-
   a:link,
   a:visited {
     color: #3c3c3c;
@@ -220,116 +145,64 @@ header {
     }
   }
 
+  // .logo {
+  //   margin: 0 auto;
+  //   -webkit-animation-duration: 3s;
+  //   -webkit-animation-delay: 2s;
+  //   -webkit-animation-iteration-count: infinite;
+
+  //   &:hover a {
+  //     display: none;
+  //   }
+
+  //   &:hover a::after {
+  //     content: "Keeps Roger Ver at Bay";
+  //   }
+
+  //   h6 {
+  //     padding: 0;
+  //   }
+
+  //   a {      
+  //     // background-image: url("/images/logo.png");
+  //     // text-indent: -9999em;
+  //     color: $white;
+  //     content: "A crypto a day";
+  //     display: block;
+  //     width: 185px;
+  //     height: 45px;
+  //     background-size: 185px 45px;
+  //   }
+  // }
+
   .logo {
-    margin: 0 auto;
+     margin: 0 auto;
     -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: infinite;
-
-    h6 {
-      padding: 0;
-    }
-
-    a {      
-      // background-image: url("/images/logo.png");
-      // text-indent: -9999em;
-      color: $white;
-      display: block;
-      width: 185px;
-      height: 45px;
-      background-size: 185px 45px;
-      &:hover {
-        color: $white;
-      }
-    }
   }
-}
-
-.hero {
-  background: url("/images/shanghai_purple.png");
-  background-size: cover;
-  background-position: center;
-  color: $white;
-  position: relative;
-  z-index: 1;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   z-index: -1;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   background-image: url("/images/shanghai.png");
-  //   background-size: cover;
-  //   background-position: center;
-  //   opacity: .3;
-  // }
-
-  &:before, &:after {
-    content: "";
-    // background: background: #434187;
-    border-bottom: 15px solid #f3f3f3;
-    height: 0px;
-    width: 50%;
-    position: absolute;
-    bottom: 0px;
+  
+  a {
+    text-decoration:none;
+    color: $white;
+    display: block;
   }
 
-  &:before {
-    border-right: 15px solid rgba(0,0,0,0);
-    left: -15px;
-  }
-
-  &:after {
-    right: -15px;
-    border-left: 15px solid rgba(0,0,0,0);
-    border-right: none;
-  }
-
-  .wrapper {
-    padding: 3rem 2rem 2rem 2rem;
-  }
-
-  &__intro {
-    // max-width: 65%;
-    margin: 0 auto;
-  }
-
-  &__image {
+  .logo a h5.finish-sentence span{
     position: relative;
-
-    img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      max-width: 45%;
+    content: 'A Crypto a day';
+    color: $white;
+    &:after {
+      transition: content ease-in 2s;
     }
   }
 
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   bottom: -10px;
-  //   left: 50%;
-  //   transform: translateX(-50%) rotate(45deg);
-  //   background-color: #434187;
-  //   width: 20px;
-  //   height: 20px;
-  // }
-
-  &__intro h1 {
-    font-size: 42px;
-    line-height: 50px;
-    font-family: 'Poppins', Helvetica, Arial;
-    text-shadow: 1px 3px 20px rgba(0, 0, 0, 0.3);
+  .logo:hover a h5.finish-sentence span{
+    display: none;
   }
-}
 
-@media (max-width: 599px) {
-  .hero__intro {
-    max-width: none;
+  .logo:hover a h5.finish-sentence:after{
+    content: 'Keeps your portfolio in sway';
+    color: $white;
   }
 }
 
@@ -345,9 +218,26 @@ header {
     font-size: 2.5rem;
     line-height: 1.4;
     padding: 0;
-    // margin-bottom: 1.75em;
-    // text-align: center;
     font-weight: 500;
+  }
+
+  form {
+    padding: 1rem 0;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  span.disclaimer a {
+    color: #605A9D;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: color ease-in 0.5s;
+    &:hover {
+      color: $white;
+    }
   }
 
   input:not([type='submit']),
@@ -356,9 +246,7 @@ header {
     background-color: #f9f9f9;
     border-radius: 5px;
     display: block;
-    // margin-top: 2rem;
     padding: 0.5rem 1rem;
-    // width: 100%;
     box-sizing: border-box;
     font-size: 1.2rem;
   }
@@ -368,7 +256,7 @@ header {
     // margin: 2rem auto 0;
     height: 3.3em;
     line-height: 3.3rem;
-    font-size: 14px;
+    font-size: 1.2rem;
     // margin: 0;
     margin-left: 10px;
     background-color: #7dc855;
@@ -400,13 +288,6 @@ header {
       display: inline-block;
     }
   }
-
-  .disclaimer {
-    color: #999;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 2rem 2rem 0;
-  }
 }
 
 @media (max-width: 599px) {
@@ -414,227 +295,6 @@ header {
     margin-bottom: 4rem;
   }
 }
-
-.reasons {
-  h3 {
-    font-size: 2rem;
-    line-height: 1;
-    padding: 0;
-    margin-bottom: 1em;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding-bottom: 0;
-  }
-
-  h4 {
-    font-size: 1.4rem;
-    padding: 0;
-    margin-bottom: 0.25em;
-  }
-
-  p {
-    font-weight: 300;
-    font-size: 1.2rem;
-  }
-}
-
-.testimonials {
-  background-color: #fff;
-  padding-bottom: 4rem;
-  position: relative;
-
-  .wrapper-large {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    background-color: #f3f3f3;
-    width: 20px;
-    height: 20px;
-  }
-
-  h3 {
-    font-size: 2.2rem;
-    text-align: center;
-    padding-top: 3rem;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0 auto;
-    width: 70%;
-  }
-
-  li {
-    display: flex;
-    margin-top: 4rem;
-  }
-
-  img {
-    margin-right: 4rem;
-    width: 156px;
-    height: 156px;
-    border-radius: 78px;
-  }
-
-  blockquote {
-    border: 0 none;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-  }
-
-  cite {
-    font-style: normal;
-    font-size: 1.2rem;
-    color: #999;
-  }
-
-  li:nth-child(even) {
-    text-align: right;
-
-    img {
-      order: 2;
-      margin-right: 0;
-      margin-left: 4rem;
-    }
-  }
-}
-
-@media (max-width: 599px) {
-  .testimonials {
-    ul {
-      width: 100%;
-    }
-    
-    img {
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-    }
-
-    li:nth-child(even) {
-      text-align: left;
-
-      img {
-        order: inherit;
-        margin-right: 4rem;
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-footer {
-  background-color: #fafafa;  
-  font-size: 1.2rem;
-
-  .wrapper-large {
-    display: flex;
-  }
-
-  p,
-  a:link,
-  a:visited {
-    font-weight: 300;
-    color: #999; 
-  }
-
-  a {
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-
-  .about {
-    width: 33.3333%;
-  }
-
-  nav {
-    width: 20%;
-
-    &:first-of-type {
-      margin-left: auto;
-    }
-  }
-
-  h5 {
-    font-weight: 700;
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-  }
-
-  .about {
-    p {
-      padding-bottom: 1rem;
-    }
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-  }
-}
-
-.imprint {
-  background-color: #e6e6e6;
-  color: #777;
-
-  .wrapper-large {
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  small,
-  span {
-    font-size: 1rem;
-    line-height: 1;
-  }
-
-  span {
-    margin-left: auto;
-  }
-
-  a:link,
-  a:visited {
-    font-weight: 300;
-    color: #777;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-}
-
-@media (max-width: 599px) {
-  .imprint {
-    .wrapper-large {
-      display: block;
-      text-align: center;
-    }
-
-    span {
-      display: block;
-      margin-top: 2rem;
-    }
-  }
-}
-
 
 
 #newprice  {
@@ -644,6 +304,16 @@ footer {
       -ms-animation: fadein 2s; /* Internet Explorer */
        -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
+
+  &.up::after {
+    margin-left: 3px;
+    content: "\2191";
+  }
+
+  &.down::after {
+    content: "\2193";
+    margin-left: 3px;
+  }
 }
 
 @keyframes fadein {

@@ -18,10 +18,11 @@ window.onload = function() {
   socket.on('trades', function (tradeMsg) {
     if(tradeMsg.message.coin == coin){
       var variation = (previousPrice < tradeMsg.message.msg.price) ? 'MediumSeaGreen' : 'red';
+      var updown = (previousPrice < tradeMsg.message.msg.price) ? 'up' : 'down';
       console.log(variation, previousPrice, tradeMsg.message.msg.price);
       
       previousPrice = tradeMsg.message.msg.price;
-      document.getElementById("price").innerHTML = '<div id="newprice" style="color: ' + variation + ';">$' + reducePrecision(tradeMsg.message.msg.price); + "</div>";
+      document.getElementById("price").innerHTML = '<div id="newprice" style="color: ' + variation + ';" class="' +updown+ '">$' + reducePrecision(tradeMsg.message.msg.price); + "</div>";
     }
   });
 };
