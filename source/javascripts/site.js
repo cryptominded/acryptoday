@@ -5,8 +5,18 @@ window.onload = function() {
     return parseFloat(Number(number).toFixed(3));
   }
 
+  var coin = 'BTC';
+
+  $.get({
+    url: 'https://coincap.io/page/' + coin,
+    data: {},
+    success: function(result) {
+      document.getElementById("price").innerHTML = '<div id="newprice">$' + result.price_usd + "</div>";
+    }
+  });
+
   socket.on('trades', function (tradeMsg) {
-    if(tradeMsg.message.coin == "MSP"){
+    if(tradeMsg.message.coin == coin){
       var variation = (previousPrice < tradeMsg.message.msg.price) ? 'MediumSeaGreen' : 'red';
       console.log(variation, previousPrice, tradeMsg.message.msg.price);
       
