@@ -5,7 +5,7 @@ window.onload = function() {
     return parseFloat(Number(number).toFixed(3));
   }
 
-  var coin = 'BTC';
+  var coin = 'OMG';
 
   $.get({
     url: 'https://coincap.io/page/' + coin,
