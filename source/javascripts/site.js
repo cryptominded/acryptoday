@@ -26,10 +26,9 @@ window.onload = function() {
     }
   });
 
-
 };
 
- var items = Array(
+var items = Array(
       "Keeps bankruptcy away",
       "Will never get you an MBA",
       "... Where's my f-ing lambo!?",
@@ -44,14 +43,12 @@ window.onload = function() {
       "Until we drive away",
       "Is just part of the foreplay",
       "And don't disobey",
-      // "May get you some lingerie",
       "Can't pay for your chinese takeaway",
       "Without a delay",
       "Keeps your sleep rhytm in decay",
       "Is better than your partners foreplay",
       "Even on a bank holiday",
       "Thanks to Cryptominded.com, okay?",
-      // "mmmkay"
     );
 
 $('.js-sentence').mouseover(function() { 
@@ -60,37 +57,3 @@ $('.js-sentence').mouseover(function() {
 $('.js-sentence').mouseleave(function() {
   $(this).text("A crypto a day...");
 });
-
-
-// $("#signup").on('submit', function(e) {
-//   e.preventDefault();
-
-//   $(".signup .submit").addClass("loading").val("");
-
-//   var data = {
-//     "email": $(".signup .email").val(),
-//     // "redirect-url": "https://acryptoaday.com/?signup=success"
-//   };
-
-//   var settings = {
-//     // "crossDomain": true,
-//     "url": "https://emailoctopus.com/lists/2b3e91d2-0fd6-11e8-a98f-06b2d989fe84/members/external-add",
-//     "method": "POST",
-//     "headers": {
-//       "content-type": "application/x-www-form-urlencoded"
-//     },
-//     "processData": false,
-//     // "data": JSON.stringify(data)
-//   };
-
-//   $.ajax(settings)
-//     .done(function (response) {
-//       window.location = "https://acryptoaday.com/?signup=success"
-//     }).fail(function(error) {
-//       var message = error.responseJSON.error ? error.responseJSON.error : error.responseJSON.description;        
-//       $(".signup .error").text(message).addClass("show");
-//       $(".signup .submit").val("Subscribe").removeClass("loading");
-//     });
-
-// });
-
