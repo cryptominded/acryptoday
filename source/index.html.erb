@@ -8,12 +8,21 @@ title: A crypto a day - by Cryptominded.com
       <div class="signup">
         <h1>Get an email about a new cryptocurrency every day</h1>
         <p>Get the facts, value, news, team &amp; price evolvements of a new cryptocurrency through a daily email.</p>
-        <form id="signup" class="animated pulse">
-          <input class="email" type="email" name="email" placeholder="Your e-mail address" />
-          <input class="submit" type="submit" value="Subscribe" />
-          <span class="error"></span>
-          <!-- <p class="disclaimer">🔒&ensp;By submitting this form you agree to receive occasional Cryptominded updates by email</p> -->
-        </form>    
+        <div class="email-octopus-form-wrapper">
+          <!-- <p class="email-octopus-error-message"></p> -->
+          <form method="post" action="https://emailoctopus.com/lists/2b3e91d2-0fd6-11e8-a98f-06b2d989fe84/members/external-add" class="email-octopus-form">
+            <div class="email-octopus-form-row">
+              <input type="email" name="emailAddress" class="email email-octopus-email-address" placeholder="satoshi@nakamoto.com">
+            </div>
+            <div class="email-octopus-form-row-hp" aria-hidden="true" style="display: none;">
+              <input type="text" name="hp2b3e91d2-0fd6-11e8-a98f-06b2d989fe84" tabindex="-1" autocomplete="nope">
+            </div>
+            <div class="email-octopus-form-row-subscribe">
+              <input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="http://dylans-mbp.home:4567/?signup=success">
+              <button type="submit" class="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
         <span class="disclaimer"><a href="/how-we-pick.html">FAQ: How we pick the daily cryptocurrency</a></span>
       </div>
     </div>
@@ -33,3 +42,16 @@ title: A crypto a day - by Cryptominded.com
     </div>
 
   </div>
+
+
+
+  <!--         <form id="signup" class="animated pulse email-octopus-form" method="post" action="https://emailoctopus.com/lists/2b3e91d2-0fd6-11e8-a98f-06b2d989fe84/members/external-add">
+          <input type="email" name="emailAddress" class="email" placeholder="satoshi@nakamoto.com" />
+          <div class="email-octopus-form-row-hp" aria-hidden="true">
+            <input type="text" name="hp2b3e91d2-0fd6-11e8-a98f-06b2d989fe84" tabindex="-1" autocomplete="nope">
+          </div>
+          <span class="error"></span>
+          <input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="https://nervous-davinci-76647f.netlify.com/?signup=success">
+          <input class="submit" type="submit" value="Subscribe" />
+          <button type="submit">Subscribe</button>
+        </form>   -->

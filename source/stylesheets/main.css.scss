@@ -12,16 +12,6 @@ body {
   // background: linear-gradient(to top, #62629A, #414186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media (max-width: 599px) {
-  main {
-    text-align: center;
-  }
-
-  .signup h1 {
-    font-size: 2rem;
-  }
-}
-
 main {
   // max-width: 1200px;
   // margin: 0 auto;
@@ -37,6 +27,7 @@ main {
 
 .cryptotoday {
   text-align: center;
+  margin-top: 2em;
 
   img {
     margin: 0 auto;
@@ -145,36 +136,6 @@ header {
     }
   }
 
-  // .logo {
-  //   margin: 0 auto;
-  //   -webkit-animation-duration: 3s;
-  //   -webkit-animation-delay: 2s;
-  //   -webkit-animation-iteration-count: infinite;
-
-  //   &:hover a {
-  //     display: none;
-  //   }
-
-  //   &:hover a::after {
-  //     content: "Keeps Roger Ver at Bay";
-  //   }
-
-  //   h6 {
-  //     padding: 0;
-  //   }
-
-  //   a {      
-  //     // background-image: url("/images/logo.png");
-  //     // text-indent: -9999em;
-  //     color: $white;
-  //     content: "A crypto a day";
-  //     display: block;
-  //     width: 185px;
-  //     height: 45px;
-  //     background-size: 185px 45px;
-  //   }
-  // }
-
   .logo {
      margin: 0 auto;
     -webkit-animation-duration: 3s;
@@ -187,7 +148,7 @@ header {
     display: block;
   }
 
-  .logo a h5.finish-sentence span{
+  .logo a h5.finish-sentence span {
     position: relative;
     content: 'A Crypto a day';
     color: $white;
@@ -196,14 +157,14 @@ header {
     }
   }
 
-  .logo:hover a h5.finish-sentence span{
-    display: none;
-  }
+  // .logo:hover a h5.finish-sentence span{
+  //   display: none;
+  // }
 
-  .logo:hover a h5.finish-sentence:after{
-    content: 'Keeps your portfolio in sway';
-    color: $white;
-  }
+  // .logo:hover a h5.finish-sentence:after{
+  //   content: '... Where\'s my f-ing lambo?!';
+  //   color: $white;
+  // }
 }
 
 #signup {
@@ -213,9 +174,10 @@ header {
 }
 
 .signup {
+  text-align: center;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.4;
     padding: 0;
     font-weight: 500;
@@ -227,12 +189,13 @@ header {
 
   p {
     padding-bottom: 1rem;
+    font-size: 14px;
   }
 
   span.disclaimer a {
     color: #605A9D;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     transition: color ease-in 0.5s;
     &:hover {
@@ -251,15 +214,16 @@ header {
     font-size: 1.2rem;
   }
 
-  input[type='submit'] {
+  button[type='submit'] {
     display: inline-block;
     // margin: 2rem auto 0;
-    height: 3.3em;
-    line-height: 3.3rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
     font-size: 1.2rem;
     // margin: 0;
     margin-left: 10px;
     background-color: #7dc855;
+    border-radius: 5px;
 
     &.loading {
       background-image: url("/images/loading.gif");
@@ -267,7 +231,7 @@ header {
       background-position: right center;
       background-size: 40px;
       padding-right: 40px;
-    }
+    }  
   }
 
   .email {
@@ -290,12 +254,27 @@ header {
   }
 }
 
-@media (max-width: 599px) {
-  .signup .box {
-    margin-bottom: 4rem;
+@media (min-width: 600px) {
+  .signup {
+    text-align: left;
+
+    p {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    span.disclaimer a {
+      font-size: 18px;
+    }
+  }
+
+  .cryptotoday {
+    margin-top: 0px;
   }
 }
-
 
 #newprice  {
   display: inline-block;
