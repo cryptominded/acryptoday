@@ -3,7 +3,7 @@ window.onload = function() {
   var previousPrice = 0;
   var  reducePrecision = function(number) {
     return parseFloat(Number(number).toFixed(3));
-  }
+  };
 
   var coin = 'OMG';
 
@@ -48,7 +48,7 @@ var items = Array(
       "Keeps your sleep rhytm in decay",
       "Is better than your partners foreplay",
       "Even on a bank holiday",
-      "Thanks to Cryptominded.com, okay?",
+      "Thanks to Cryptominded.com, okay?"
     );
 
 $('.js-sentence').mouseover(function() { 
