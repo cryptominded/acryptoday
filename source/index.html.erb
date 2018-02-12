@@ -9,7 +9,7 @@ title: A crypto a day - by Cryptominded.com
         <h1>Get an email about a new cryptocurrency every day</h1>
         <p>Get the facts, value, news, team &amp; price evolvements of a new cryptocurrency through a daily email.</p>
         <div class="email-octopus-form-wrapper">
-          <form method="post" action="https://emailoctopus.com/lists/2b3e91d2-0fd6-11e8-a98f-06b2d989fe84/members/external-add" class="email-octopus-form animated pulse">
+          <form method="post" action="https://emailoctopus.com/lists/2b3e91d2-0fd6-11e8-a98f-06b2d989fe84/members/external-add" id="form" class="email-octopus-form animated pulse">
             <div class="email-octopus-form-row">
               <input type="email" name="emailAddress" class="email email-octopus-email-address" placeholder="satoshi@nakamoto.com">
             </div>
@@ -21,6 +21,9 @@ title: A crypto a day - by Cryptominded.com
               <button type="submit" class="submit">Subscribe</button>
             </div>
           </form>
+          <div id="signup_success" class="animated pulse" style="display: none; color: MediumSeaGreen;">
+            <p>Thank you for subscribing. You'll receive the first email soon.</p>
+          </div>
         </div>
         <span class="disclaimer"><a href="/how-we-pick.html">FAQ: How we pick the daily cryptocurrency</a></span>
       </div>

@@ -26,6 +26,14 @@ window.onload = function() {
     }
   });
 
+  var field = 'signup';
+  var url = window.location.href;
+
+  if(url.indexOf('?' + field + '=' + 'success') != -1) {
+    document.getElementById('signup_success').style.display = "block";
+    document.getElementById('form').style.display = "none";
+  };
+
 };
 
 var items = Array(
