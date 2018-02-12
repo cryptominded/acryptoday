@@ -20,9 +20,12 @@ main {
 .valign {
   box-sizing: border-box;
   color: white;
-  margin: 50vh auto 0;
-  transform: translateY(-50%);
-  -webkit-animation-duration: 3s;
+
+  @media screen and (min-width: 600px) {
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    -webkit-animation-duration: 3s;
+  }
 }
 
 .cryptotoday {
@@ -55,12 +58,18 @@ main {
 }
 
 .links {
-    position: absolute;
+    // position: absolute;
     bottom: 20px;
     z-index: 10000;
     left: 0;
     right: 0;
     text-align: center;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: 600px) {
+      position: absolute;
+      // padding-bottom: 0;
+    }
 
     .backlink {
     margin-top: -5px;
@@ -110,7 +119,10 @@ header {
   height: 10vh;
   width: 100%;
   top: 0;
-  position: absolute;
+
+  @media screen and (min-width: 600px) {
+    position: absolute;
+  }
   
   .wrapper-large {
     padding-top: 0;
@@ -138,8 +150,9 @@ header {
 
   .logo {
      margin: 0 auto;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: 2;
   }
   
   a {
@@ -167,14 +180,23 @@ header {
   // }
 }
 
-#signup {
+.email-octopus-form {
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 15s;
 // -webkit-animation-iteration-count: infinite;
 }
 
 .signup {
   text-align: center;
+
+  .back a {
+    opacity: 0.3;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   h1 {
     font-size: 2rem;
@@ -221,9 +243,17 @@ header {
     line-height: 3.5rem;
     font-size: 1.2rem;
     // margin: 0;
-    margin-left: 10px;
     background-color: #7dc855;
     border-radius: 5px;
+
+    @media screen and (max-width: 599px) {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    @media screen and (min-width: 600px) {
+      margin-left: 10px;
+    }
 
     &.loading {
       background-image: url("/images/loading.gif");
@@ -236,7 +266,11 @@ header {
 
   .email {
     float: left;
-    width: 60%;
+    width: 100%;
+
+    @media screen and (min-width: 600px) {
+      width: 60%;
+    }
   }
 
   .error {
@@ -253,6 +287,21 @@ header {
     }
   }
 }
+
+span.explanation {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5vh;
+  font-size: 12px;
+  opacity: 0.6;
+  line-height: 18px;
+
+  a {
+    text-decoration: none;
+    // color: #;
+  }
+}
+
 
 @media (min-width: 600px) {
   .signup {
@@ -273,6 +322,32 @@ header {
 
   .cryptotoday {
     margin-top: 0px;
+  }
+
+  span.explanation {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20vh;
+    width: 65%;
+  }
+
+}
+
+.mobile-only {
+  @media screen and (max-width: 599px) {
+    display: block;
+  }
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
+  @media screen and (min-width: 600px) {
+    display: block;
   }
 }
 

@@ -10,10 +10,14 @@
 html{
   box-sizing: border-box;
   font-size: 62.5%;
-  height: 100%;
+  // height: 100%;
 
   @media screen and (min-width: 960px){
     font-size: 78.125%;
+  }
+
+    @media screen and (min-width: 600px) {
+      height: 100%;
   }
 }
 
@@ -22,13 +26,19 @@ body{
   font-family: $base-font;
   font-size: $font-size;
   line-height: $line-height;
-  min-height: 100%;
-  overflow: hidden;
+  // min-height: 100%;
+  // overflow: hidden;
   // color: $white;
   // position: relative;
   // background: $bgcolor;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#434187+0,393772+100 */
   // background-color: linear-gradient(297deg, rgb(0, 0, 0) -13%, #62629A 100%);
+
+  @media screen and (min-width: 600px) {
+      // min-height: 100%;
+      overflow: hidden;
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6{

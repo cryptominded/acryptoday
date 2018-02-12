@@ -59,15 +59,22 @@ Styleguide 1.1
 .grid > *{
   flex: 1;
   flex-grow: 4;  
-  padding-left: 2rem;
-  padding-right: 2rem;
+
+  @media screen and (min-width: 600px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   &:first-child{
-    margin-left: -2rem;
+    @media screen and (min-width: 600px) {
+      margin-left: -2rem;
+    }
   }
 
   &:last-child{
-    margin-right: -2rem;
+    @media screen and (min-width: 600px) {
+      margin-right: -2rem;
+    }
   }
 
   &.column--light{

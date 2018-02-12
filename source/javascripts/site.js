@@ -30,30 +30,28 @@ window.onload = function() {
 };
 
  var items = Array(
-      "Keeps Roger Ver at bay",
       "Keeps bankruptcy away",
       "Will never get you an MBA",
       "... Where's my f-ing lambo!?",
       "Will eventually pay for your latte",
-      "Because your mom asks you to repay",
+      "Because your mom asks for that student loan repay",
       "Will keep you from experiencing doomsday",
       "Will help you average it out through DCA",
-      "Except on Satur.. nevermind",
-      "Gets you some headway",
+      "Gets you some financial headway",
       "Because your boss keeps forgetting your payday",
       "Keeps Vitalik Buterin coding day-to-day",
       "Is it already friday?!",
       "Until we drive away",
       "Is just part of the foreplay",
-      "Don't disobey",
-      "May get you some lingerie",
+      "And don't disobey",
+      // "May get you some lingerie",
       "Can't pay for your chinese takeaway",
-      "Without delay",
+      "Without a delay",
       "Keeps your sleep rhytm in decay",
       "Is better than your partners foreplay",
       "Even on a bank holiday",
       "Thanks to Cryptominded.com, okay?",
-      "mmmkay"
+      // "mmmkay"
     );
 
 $('.js-sentence').mouseover(function() { 
