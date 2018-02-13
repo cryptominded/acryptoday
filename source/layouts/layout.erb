@@ -7,11 +7,11 @@
 
     <title><%= current_page.data.title || "Middleman" %></title>
 
-    <meta http-equiv="Content-Language" content="{{ LANG }}"> 
-    <meta name="language" content="{{ LANG }}" />
+    <meta http-equiv="Content-Language" content="en_US"> 
+    <meta name="language" content="en_US" />
     <meta name="application-name" content="A crypto a day - by Cryptominded.com">
-    <meta name="description" content="Learn about a new cryptocurrency each day through a daily email. In the email you'll find facts, the value, news related to the crypto, the team and the price evolvement.">
-    <meta name="keywords" content="cryptocurrency, events, bitcoin, community" />
+    <meta name="description" content="Learn about a new cryptocurrency each day through a daily email. In the email you'll find facts about the cryptocurrency, news related to the coin, the team, the price evolvement and more.">
+    <meta name="keywords" content="cryptocurrency, newsletter, bitcoin, ethereum, community" />
     <meta name="robots" content="index,follow" />
 
     <!-- Resolve DNS asap (can be useful for future pages) -->
@@ -30,7 +30,7 @@
         
     <!-- Don't want the content to be translated on the fly by the browser ? -->
     <meta name="google" value="notranslate">
-    <meta name="google-site-verification" content="{{ GOOGLE_WEBMASTER_TOOLS_KEY }}">
+    <!-- <meta name="google-site-verification" content="{{ GOOGLE_WEBMASTER_TOOLS_KEY }}"> -->
 
     <!-- fav icon -->
     <!-- <link rel="fluid-icon" href="https://.../fluidicon.png" title="..."> ? -->
@@ -49,22 +49,22 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="image_src" href="{{ PAGE_IMAGE_URL }}">
+    <link rel="image_src" href="/images/opengraph.png">
 
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#373A76">
 
     <!-- Open Graph -->
     <!-- TODO DYNAMIC ACCORDING TO THE TYPE -->
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" /> <!-- product... -->
+    <meta property="og:type" content="product" /> <!-- product... -->
     <meta property="og:title" content="A crypto a day - by Cryptominded.com" />
-    <meta property="og:description" content="Learn about a new cryptocurrency each day through a daily email. In the email you'll find facts, the value, news related to the crypto, the team and the price evolvement." />
-    <meta property="og:image" content="" />
+    <meta property="og:description" content="Learn about a new cryptocurrency each day through a daily email. In the email you'll find facts about the daily cryptocurrency, it's purpose and underlying value, news related to the coin, the team and the price evolvement." />
+    <meta property="og:image" content="/images/opengraph.png" />
     <meta property="og:url" content="https://acryptoaday.com" />
-    <meta property="og:site_name" content="Cryptominded" /> 
-
+    <meta property="og:site_name" content="A crypto a day" /> 
+<!-- 
     <meta property="article:publisher" content="{{ FACEBOOK_PUBLISHER }}" />
     <meta property="article:author" content="{{ FACEBOOK_AUTHOR }}" />
     <meta property="article:section" content="Technology" />
@@ -72,22 +72,22 @@
     <meta property="article:modified_time" content="2015-05-12T22:24:50+00:00" />
     <meta property="og:updated_time" content="2015-05-12T22:24:50+00:00" />
     <meta property="fb:admins" content="???" />
-    <meta property="fb:app_id" content="123456789456489" />
+    <meta property="fb:app_id" content="123456789456489" /> -->
 
     <!-- TODO DYNAMIC ACCORDING TO THE CARD TYPE -->
     <meta name="twitter:card" content="summary"/> <!-- photo -->
-    <meta name="twitter:title" content="{{ PAGE_NAME }}"/>
-    <meta name="twitter:description" content="{{ PAGE_DESCRIPTION }}"/>
-    <meta name="twitter:site" content="{{ TWITTER_WEBSITE_ACCOUNT }}"/>
-    <meta name="twitter:image" content="{{ PAGE_IMAGE_URL }}" />
-    <meta name="twitter:creator" content="{{ TWITTER_CREATOR_ACCOUNT }}"/>
-    <meta name="twitter:domain" content="mon.site.com"/>
+    <!-- <meta name="twitter:title" content="{{ PAGE_NAME }}"/> -->
+    <!-- <meta name="twitter:description" content="{{ PAGE_DESCRIPTION }}"/> -->
+    <!-- <meta name="twitter:site" content="{{ TWITTER_WEBSITE_ACCOUNT }}"/> -->
+    <meta name="twitter:image" content="/images/opengraph.png" />
+    <!-- <meta name="twitter:creator" content="{{ TWITTER_CREATOR_ACCOUNT }}"/> -->
+    <!-- <meta name="twitter:domain" content="mon.site.com"/> -->
 
     <!-- Bing -->
-    <meta name="geo.placename" content="United States" />
-    <meta name="geo.position" content="x;x" />
-    <meta name="geo.region" content="usa" />
-    <meta name="ICBM" content="x,x" />
+    <!-- <meta name="geo.placename" content="United States" /> -->
+    <!-- <meta name="geo.position" content="x;x" /> -->
+    <!-- <meta name="geo.region" content="usa" /> -->
+    <!-- <meta name="ICBM" content="x,x" /> -->
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -115,6 +115,6 @@
         <%= partial 'partials/footer-scripts' %>
 
     </main>
-    
+
   </body>
 </html>

@@ -3,10 +3,13 @@
 @import "components";
 
 body {
-  background-image: url("/images/bg_header.png"), linear-gradient(to top, #1C174A, #414186);
+  // background-image: url("/images/bg_icons_trans.png"), linear-gradient(to top, rgba(28,23,74,1), rgba(65,65,134,1));
+  background-image: url("/images/bg_header.png"), linear-gradient(to top, #1C174A, #383B77);
+  // background-image: url("/images/bg_icons_trans.png"), linear-gradient(to top, color-stop(0%, rgba(65,65,134,0.5)), color-stop(100%, rgba(28,23,74,1)));
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  // background-size: cover;
   // background: #62629A;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to top, #62629A, #414186);  /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to top, #62629A, #414186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -45,13 +48,16 @@ main {
     color: $white;
     text-decoration: none;
     &:hover .learnmore {
-      color: $white;
+      // color: $white;
+      opacity: 1;
     }
   }
 
   .learnmore {
     margin-top: -5px;
-    color: #605A9D;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 300;
     display: block;
     transition: color ease-in 0.5s;
   }
@@ -215,13 +221,15 @@ header {
   }
 
   span.disclaimer a {
-    color: #605A9D;
+    color: #ffffff;
+    opacity: 0.4;
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
     transition: color ease-in 0.5s;
     &:hover {
       color: $white;
+      opacity: 1;
     }
   }
 
