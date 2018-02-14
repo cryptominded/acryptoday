@@ -21,14 +21,14 @@
   </mj-head>
   
   <mj-body>
-    <mj-container background-color="#dadfe2">
+    <mj-container background-color="#E6E6E6">
       
       <mj-include path="./header.mjml" />
       <mj-section background-color="#ffffff" padding="0"><mj-column>
         <mj-text font-weight="300" font-size="15px" align="center">
           <p>
 						<a href="#" style="color: grey;">
-	Safely store your Aragon tokens on a Ledger Nano S. Get one today →
+	Let us know what you think of Aragon on our community forum →
 						</a>
 					</p>
         </mj-text>
@@ -48,15 +48,15 @@
         
         <mj-group>
           <mj-column>
-            <mj-text>
-                <span style="display: block; font-weight: 600;">Current Rank</span>
-                <span style="display: block; font-weight: 600;">7 day avg</span>
-                <span style="display: block; font-weight: 600;">Market Cap</span>
+            <mj-text font-size="15">
+                <span style="display: block; font-weight: 500;">Current Rank:</span>
+                <span style="display: block; font-weight: 500;">7 day avg:</span>
+                <span style="display: block; font-weight: 500;">Market Cap:</span>
             </mj-text>
           </mj-column>
 
           <mj-column>
-            <mj-text>
+            <mj-text font-size="15">
                 <span style="display: block;">#27</span>
                 <span style="display: block;">$4.92</span>
                 <span style="display: block;">$30,002,021</span>
@@ -66,7 +66,7 @@
 
         <mj-group>
           <mj-column>
-            <mj-text>
+            <mj-text font-size="15">
                 <span style="display: block;"><a href="#">Website</a></span>
                 <span style="display: block;"><a href="#">Community</a></span>
               <span style="display: block;"><a href="#">Whitepaper</a></span>
@@ -74,7 +74,7 @@
           </mj-column>
 
           <mj-column>
-            <mj-text>
+            <mj-text font-size="15">
                 <span style="display: block;"><a href="#">Reddit</a></span>
                 <span style="display: block;"><a href="#">Twitter</a></span>
                 <span style="display: block;"><a href="#">Github</a></span>
@@ -86,9 +86,9 @@
       
       <mj-section background-color="#fff" padding-top="0" padding-bottom="0">
         <mj-column>
-                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+         <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 25"/>
         <mj-text align="center">
-        <a href="#"><h3>Get Aragon (ANT) on Binance</h3></a>
+        <h3 style="font-weight: 400;">Recommended Exchange: <a href="#">Get Aragon (ANT) on Binance</a></h3>
         </mj-text>
         </mj-column>
       </mj-section>
@@ -123,9 +123,9 @@
       
       <mj-section background-color="#fff" padding-top="0" padding-bottom="0">
         <mj-column>
-                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 25"/>
         <mj-text align="center">
-        <a href="#"><h3>Safely store Aragon on a Ledger Nano S</h3></a>
+<h3 style="font-weight: 400;">Recommended Wallet: <a href="#">Store your Aragon safely on a Ledger Nano S</a></h3>
         </mj-text>
         </mj-column>
       </mj-section>
@@ -197,10 +197,9 @@ The Aragon Network Token is used to govern all the functions of the Aragon Netwo
       
       <mj-section background-color="#fff" padding-top="0" padding-bottom="0">
         <mj-column>
-                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 25"/>
         <mj-text align="center">
-        <a href="#"><h3>Get Aragon (ANT) on HitBTC</h3></a>
-        </mj-text>
+<h3 style="font-weight: 400;">Alternative exchange: <a href="#">Get Aragon (ANT) on HitBTC</a></h3>        </mj-text>
         </mj-column>
       </mj-section>
       
@@ -228,7 +227,7 @@ The Aragon Network Token is used to govern all the functions of the Aragon Netwo
         <mj-text font-weight="300" font-size="15px" align="center" color="Grey">
           <p>
 <a href="#">
-            Join the Cryptominded community and discuss these tokens and more →</span></a>
+            Join the discussion about the Aragon (ANT) token on our community forum →</span></a>
 </p>
         </mj-text>
         </mj-column>
