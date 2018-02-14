@@ -1,0 +1,32 @@
+  <mj-section background-color="#fff">
+        
+        <mj-column>
+          <mj-text font-weight="300" font-size="14">
+            <h2 style="font-weight: bold; margin-top: 0; margin-bottom: 0">
+              <a href="https://blog.aragon.one/aragon-team-update-january-2018-aacd32b709ed" style="color: #383B77; text-decoration: none;">
+            #1 - Aragon Team Updates: January 2018
+            </a>
+            </h2>
+            <p>Team members will produce a write-up of the most important things they have worked on since last Community Meeting, the problems they have found and what they plan to do in the next weeks... [read more]</p>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+          <mj-text font-weight="300" font-size="14">
+            <h2 style="font-weight: bold; margin-top: 0; margin-bottom: 0">
+              <a href="http://projects.csail.mit.edu/soundnet/" style="color: #383B77; text-decoration: none;">
+            #2 - One year of Aragon in the wild
+            </a>
+            </h2>
+            <p style="font-size: 14px;">Exactly one year ago today Luis and I showed Aragon to the world for the very first time. In just one year we have... [read more] </p>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+          <mj-text font-weight="300" font-size="14">
+            <h2 style="font-weight: bold; margin-top: 0; margin-bottom: 0">
+              <a href="http://projects.csail.mit.edu/soundnet/" style="color: #383B77; text-decoration: none;">
+            #3 - Announcing Aragon Labs
+            </a>
+            </h2>
+            <p style="font-size: 14px;">Ever since the early days of the Aragon project we’ve known that there will be obstacles that we’ll need to solve. Concepts that exist, but require research before... [read more] </p>
+          </mj-text>
+        </mj-column>
+
+      </mj-section>

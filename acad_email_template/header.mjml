@@ -1,0 +1,10 @@
+<mj-section padding-bottom="0">
+
+  <mj-column>
+    <mj-text align="center" font-family="Poppins">
+      <p><span style="font-size: 28px; font-weight:600; color:#383B77;">A crypto a day</span><br />
+      <span style="color:#777777; margin-top: 10px; display:block; font-weight:300;">by cryptominded.com</span></p>
+    </mj-text>
+  </mj-column>
+
+</mj-section>

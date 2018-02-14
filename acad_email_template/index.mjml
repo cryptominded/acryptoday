@@ -1,0 +1,241 @@
+<mjml>
+  
+  <mj-head>
+    <mj-title>A crypto a day</mj-title>
+    <mj-preview>Crypto token of the day: Aragon (ANT)</mj-preview>
+    <mj-class name="blue" color="blue" />
+    <mj-class name="big" font-size="20px" />
+    <mj-all font-family="Poppins" />
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" />
+    
+    <mj-style>
+      a {
+        color: #383B77;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body>
+    <mj-container background-color="#dadfe2">
+      
+      <mj-include path="./header.mjml" />
+      <mj-section background-color="#ffffff" padding="0"><mj-column>
+        <mj-text font-weight="300" font-size="15px" align="center">
+          <p>
+						<a href="#" style="color: grey;">
+	Safely store your Aragon tokens on a Ledger Nano S. Get one today →
+						</a>
+					</p>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+
+      <!-- Company Header -->
+      <mj-section background-color="#fff" padding="0" border-top="5px #383B77 solid">
+        <mj-column>
+        <mj-image align="center" border="none" padding="0" src="https://cryptominded-muc3mconxtxewee6orxv.netdna-ssl.com/images/aragon_cotd.png" target="_blank" title="" width="780px">
+        </mj-image>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section background-color="#fff">
+        
+        <mj-group>
+          <mj-column>
+            <mj-text>
+                <span style="display: block; font-weight: 600;">Current Rank</span>
+                <span style="display: block; font-weight: 600;">7 day avg</span>
+                <span style="display: block; font-weight: 600;">Market Cap</span>
+            </mj-text>
+          </mj-column>
+
+          <mj-column>
+            <mj-text>
+                <span style="display: block;">#27</span>
+                <span style="display: block;">$4.92</span>
+                <span style="display: block;">$30,002,021</span>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+
+        <mj-group>
+          <mj-column>
+            <mj-text>
+                <span style="display: block;"><a href="#">Website</a></span>
+                <span style="display: block;"><a href="#">Community</a></span>
+              <span style="display: block;"><a href="#">Whitepaper</a></span>
+            </mj-text>
+          </mj-column>
+
+          <mj-column>
+            <mj-text>
+                <span style="display: block;"><a href="#">Reddit</a></span>
+                <span style="display: block;"><a href="#">Twitter</a></span>
+                <span style="display: block;"><a href="#">Github</a></span>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+        
+      </mj-section>
+      
+      <mj-section background-color="#fff" padding-top="0" padding-bottom="0">
+        <mj-column>
+                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+        <mj-text align="center">
+        <a href="#"><h3>Get Aragon (ANT) on Binance</h3></a>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+			<mj-section padding="10px 0">
+       <!-- GAP -->  
+      </mj-section>
+      
+      <!-- Image Header -->
+      <mj-section background-color="#fff" border-top="5px #383B77 solid">
+        <mj-column>
+          <mj-text font-size="15" font-weight="300">
+<h3 style="font-size:20px;font-weight:500;">What is Aragon (ANT)?</h3>
+          <p>Aragon enables you to manage entire organizations using a blockchain based platform. This makes Aragon organizations more efficient and transparent compared to their traditional counterparties. By making it possible for everyone in the world to govern organisations together, Aragon is enabling the borderless, permissionless creation of value.</p>
+
+          <p>Aragon organizations are powered by Ethereum, a blockchain based virtual computing platform. This ensures that your organization will always work, even if a government or malicious third party tries to tamper with it.</p>
+
+          <p>The Aragon Network will be the first DAO whose goal is to act as a digital jurisdiction that makes it extremely easy and friendly for organizations, entrepreneurs and investors to operate.</p>
+
+<p>Aragon organizations will be able to be seamlessly upgraded and solve human disputes using a decentralized court system.</p>
+
+          <p>The Aragon Network has its own token, ANT, which will be used to govern every single aspect of its functioning.</p>
+					<p><strong>Interesting facts</strong></p>
+					<ul>
+	          <li>Aragon was the first project to issue an ERC20 Token</li>
+  	        <li>The founder of Aragon was part of Forbes 30 under 30</li>
+            <li>The Aragon infrastructure is being used by District0x</li>
+          </ul>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section background-color="#fff" padding-top="0" padding-bottom="0">
+        <mj-column>
+                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+        <mj-text align="center">
+        <a href="#"><h3>Safely store Aragon on a Ledger Nano S</h3></a>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section padding="10px 0">
+       	<!-- GAP -->  
+      </mj-section>
+      
+      <!-- Header image graph -->
+      
+      <!-- Image Graph -->
+      <mj-section background-color="#fff" border-top="5px #383B77 solid">
+        <mj-column>
+        <mj-image src="https://cryptominded-graphs.herokuapp.com/graph?period=1week&tsym=ANT" padding="10"></mj-image>
+          </mj-column>
+      </mj-section>
+     
+      <mj-section padding="10px 0">
+       	<!-- GAP -->  
+      </mj-section>
+      
+      <!-- Icons -->
+      <mj-section background-color="#ffffff" padding="25 0 0 0" border-top="5px #383B77 solid">
+       <mj-column>
+        <mj-text font-weight="500" font-size="20">About the Aragon (ANT) Token
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section background-color="#ffffff" padding-bottom="0" padding-top="10">
+        <mj-group>
+          
+          <mj-column>
+            <mj-text>
+              <span style="display: block; font-weight: 500;">Genesis Date</span>
+              <span style="display: block; font-weight: 500;">Type</span>
+              <span style="display: block; font-weight: 500;">Market Cap</span>
+            </mj-text>
+          </mj-column>
+
+          <mj-column>
+            <mj-text>
+              <span style="display: block;">27 Feb 2016</span>
+              <span style="display: block;">ERC20</span>
+              <span style="display: block;">$30,002,021</span>
+            </mj-text>
+          </mj-column>
+          
+        </mj-group>
+        
+        <mj-column>
+          <mj-text>
+            <span style="display: block;"><a href="#">Block Explorer</a></span>
+            <span style="display: block;"><a href="#">Smart contract</a></span>
+            <span style="display: block;"><a href="#">Get on Binance</a></span>
+          </mj-text>
+        </mj-column>
+
+        </mj-section>
+        
+      <mj-section background-color="#ffffff" padding="0"><mj-column>
+        <mj-text font-weight="300" font-size="15px">
+          <p>
+            <strong>Purpose of the token</strong><br />
+The Aragon Network Token is used to govern all the functions of the Aragon Network. This means that users can vote, using their Aragon tokens, to influence decisions on how the Aragon network shall function. This process towards community governance will gradually happen as the Aragon project matures.</p>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section background-color="#fff" padding-top="0" padding-bottom="0">
+        <mj-column>
+                <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding-top="0"/>
+        <mj-text align="center">
+        <a href="#"><h3>Get Aragon (ANT) on HitBTC</h3></a>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section padding="10px 0">
+       	<!-- GAP -->  
+      </mj-section>
+      
+      <!-- Latest News -->
+      <mj-section background-color="#fff" padding="25 0 0 0" border-top="5px #383B77 solid">
+        <mj-column>
+        <mj-text font-weight="500" font-size="20">
+          3 top news items of last week
+        </mj-text>
+        </mj-column>
+      </mj-section>     
+      
+			<mj-include path="./news.mjml" />
+      
+      <mj-section padding="10px 0">
+       	<!-- GAP -->  
+      </mj-section>
+      
+      <mj-section background-color="#ffffff" padding="0" border-top="5px #383B77 solid">
+        <mj-column>
+        <mj-text font-weight="300" font-size="15px" align="center" color="Grey">
+          <p>
+<a href="#">
+            Join the Cryptominded community and discuss these tokens and more →</span></a>
+</p>
+        </mj-text>
+        </mj-column>
+      </mj-section>
+      
+      
+      <mj-include path="./footer.mjml" />
+    </mj-container>
+  </mj-body>
+</mjml>

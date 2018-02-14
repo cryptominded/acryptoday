@@ -1,0 +1,14 @@
+<mj-section>
+
+  <mj-column>
+    <mj-text align="center" color="Grey" font-weight="300">
+      © Copyrighted by <a href="https://cryptominded.com">Cryptominded OÜ</a> - All rights reserved<br />
+Narva Mnt 5, 10117 Tallinn, Estonia.
+    </mj-text>
+    
+     <mj-text align="center" color="Grey" font-weight="300">
+       <a href="#">Unsubscribe</a> | <a href="https://acryptoaday.com/disclaimer.html">Disclaimer</a> | <a href="https://acryptoaday.com/advertise.html">Advertise</a>
+    </mj-text>
+  </mj-column>
+
+</mj-section>
