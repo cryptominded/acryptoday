@@ -5,7 +5,7 @@ window.onload = function() {
     return parseFloat(Number(number).toFixed(3));
   };
 
-  var coin = 'LKK';
+  var coin = 'KMD';
 
   $.get({
     url: 'https://coincap.io/page/' + coin,
