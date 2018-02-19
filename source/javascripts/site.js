@@ -5,7 +5,7 @@ window.onload = function() {
     return parseFloat(Number(number).toFixed(3));
   };
 
-  var coin = 'KMD';
+  var coin = 'SWFTC';
 
   $.get({
     url: 'https://coincap.io/page/' + coin,
